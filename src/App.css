@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: red;
+}
+
+input[type="text"] {
+  border: none;
+  border-radius: 12px;
+  width: 16.6rem;
+  padding: 10px 20px;
+}
+
+button.formButton {
+  border: none;
+  background-color: transparent;
+  color: red;
+  position: absolute;
+  transform: translate(-35px, 5px);
+}
+
+form {
+  margin-right: 50px;
+}
+
+.feedBody {
+  display: flex;
+  height: 90vh;
+}
+
+.sideBar {
+  border-right: 1px solid rgb(48, 48, 48);
+  flex: 20% 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightSide {
+  flex: 80%;
+  height: 90vh;
+  overflow-y: auto;
+}
+
+button.categoryBtn {
+  background-color: transparent;
+  border: none;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  margin: 2px 20px;
+  transition: 0.3s;
+  border-radius: 1.6rem;
+  cursor: pointer;
+}
+
+span.sideBarFirstSpan {
+  margin-left: 10px;
+  color: red;
+  transition: 0.3s;
+}
+
+span.sideBarSecondSpan {
+  margin-left: 20px;
+  color: white;
+}
+
+button.categoryBtn:hover {
+  background-color: red;
+}
+
+button.categoryBtn:hover span.sideBarFirstSpan {
+  color: white !important;
+}
+
+.header h1 {
+  color: white;
+  margin-left: 20px;
+}
+
+.videos {
+  margin: 20px;
+}
+
+.videosBoxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.videoBox {
+  cursor: pointer;
+}
+
+img.thumbnail {
+  width: 100%;
+}
+
+.details {
+  height: 12vh;
+  margin-top: 15px;
+}
+
+.title span {
+  font-size: 0.9rem;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  width: 87%;
+  display: block;
+  font-weight: bold;
+  overflow: hidden;
+  height: 35px;
+}
+
+.channelName span {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  color: #ababab;
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
